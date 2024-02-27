@@ -66,28 +66,25 @@ Before installing the drivers, identify the recommended driver for your GPU.
 
 1. Install necessary utilities:
 
-  ```bash
-  sudo apt-get install alsa-utils
-  sudo apt install ubuntu-drivers-common
-  ```
+    ```bash
+    sudo apt-get install alsa-utils
+    sudo apt install ubuntu-drivers-common
+    ```
 2. Check the recommended drivers:
-
-  ```bash
-  ubuntu-drivers devices
-  ```
+  
+    ```bash
+    ubuntu-drivers devices
+    ```
 
   This will output a list of drivers with one marked as recommended.
 
 3. Install the recommended driver:
 
-  ```bash
-  sudo apt-get install alsa-utils
-  sudo apt install ubuntu-drivers-common
-  ubuntu-drivers devices
-  sudo apt install libnvidia-common-535
-  sudo apt install libnvidia-gl-535
-  sudo apt install nvidia-driver-535
-  ```
+    ```bash
+    sudo apt install libnvidia-common-535
+    sudo apt install libnvidia-gl-535
+    sudo apt install nvidia-driver-535
+    ```
 
 ### Step 7: Install CUDA Toolkit 11.8
 
