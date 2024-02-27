@@ -76,7 +76,7 @@ Before installing the drivers, identify the recommended driver for your GPU.
   ubuntu-drivers devices
   ```
 
-    This will output a list of drivers with one marked as recommended.
+  This will output a list of drivers with one marked as recommended.
 
 3. Install the recommended driver:
 
