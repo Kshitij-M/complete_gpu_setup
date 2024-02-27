@@ -49,7 +49,6 @@ Install the necessary packages for NVIDIA drivers and CUDA toolkit.
 
 ```bash
 sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
-sudo apt-get install alsa-utils
 ```
 
 ### Step 5: Add NVIDIA PPA Repository
@@ -63,15 +62,32 @@ sudo apt update
 
 ### Step 6: Install NVIDIA Drivers
 
-Install the recommended NVIDIA driver for your GPU.
+Before installing the drivers, identify the recommended driver for your GPU.
 
-```bash
-sudo apt install ubuntu-drivers-common
-ubuntu-drivers devices
-sudo apt install libnvidia-common-535
-sudo apt install libnvidia-gl-535
-sudo apt install nvidia-driver-535
-```
+1. Install necessary utilities:
+
+  ```bash
+  sudo apt-get install alsa-utils
+  sudo apt install ubuntu-drivers-common
+  ```
+2. Check the recommended drivers:
+
+  ```bash
+  ubuntu-drivers devices
+  ```
+
+    This will output a list of drivers with one marked as recommended.
+
+3. Install the recommended driver:
+
+  ```bash
+  sudo apt-get install alsa-utils
+  sudo apt install ubuntu-drivers-common
+  ubuntu-drivers devices
+  sudo apt install libnvidia-common-535
+  sudo apt install libnvidia-gl-535
+  sudo apt install nvidia-driver-535
+  ```
 
 ### Step 7: Install CUDA Toolkit 11.8
 
