@@ -134,7 +134,8 @@ nvcc -V
 Finally, install PyTorch with CUDA support.
 
 ```bash
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip3 install --force-reinstall torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip3 install --force-reinstall torch-cluster torch-geometric torch-scatter torch-sparse torch-spline-conv -f https://data.pyg.org/whl/torch-1.x.x+cu118.html
 ```
 
 ## 🎉 Congratulations!
