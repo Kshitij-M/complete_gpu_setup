@@ -109,7 +109,7 @@ sudo ldconfig
 
 ### Step 9: Install cuDNN v8.9.7
 
-Download and install cuDNN. Make sure to register at NVIDIA's website before downloading.
+Download and install cuDNN. Make sure to register at NVIDIA's website before downloading. [https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/linux-x86_64/]
 
 ```bash
 CUDNN_TAR_FILE="cudnn-linux-x86_64-8.9.7.29_cuda11-archive.tar.xz"
