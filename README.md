@@ -120,7 +120,15 @@ sudo cp -P cudnn-*-archive/lib/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 ```
 
-### Step 10: Verify NVIDIA Driver and CUDA Installation
+### Step 10: Reboot Your System for Sync 🖥️
+
+After installing the drivers and CUDA, reboot your system to ensure the drivers are properly synchronized with the GPU hardware.
+
+```bash
+sudo reboot
+```
+
+### Step 11: Verify NVIDIA Driver and CUDA Installation
 
 Check if NVIDIA drivers and CUDA are installed correctly.
 
@@ -129,7 +137,7 @@ nvidia-smi
 nvcc -V
 ```
 
-### Step 11: Install PyTorch
+### Step 12: Install PyTorch
 
 Finally, install PyTorch with CUDA support.
 
