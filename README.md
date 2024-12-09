@@ -1,7 +1,3 @@
-Sure, here's a README file formatted for clarity, informativeness, and a bit of flair with emojis. This README provides detailed instructions for setting up CUDA, cuDNN, and PyTorch on Ubuntu.
-
----
-
 # CUDA, cuDNN, and PyTorch Setup Guide for Ubuntu 🐧
 
 Welcome to the ultimate setup guide for CUDA 11.8, cuDNN, and PyTorch on Ubuntu. Follow these instructions to get your machine learning environment up and running with GPU acceleration!
